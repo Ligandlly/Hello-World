@@ -2,20 +2,16 @@
 #include <math.h>
 
 double element(long i, double step, double up);
-double f( double );
+inline double f( double );
 
 int main()
 {
     double ans = 0;
 
 
-    double up; // the upper limit
-    printf("Please enter the upper limit: ");
-    scanf("%lf", &up);
+    double up = acos(-1); // the upper limit
 
-    double low; // the lower limit
-    printf("Please enter the lower limit: ");
-    scanf("%lf", &low);
+    double low = 0; // the lower limit
 
     if (up <= low)
     {
@@ -38,11 +34,8 @@ int main()
     return 0;
 }
 
-double f( double x)
+inline double f( double x)
 {
-    if (x == 0)
-        return -100;
-    else
         return sin(x)/x;
 }
 
