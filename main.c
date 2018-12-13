@@ -5,6 +5,7 @@
 
 double element(long i, double step, double up);
 double f( double );
+
 int main()
 {
     double ans = 0;
@@ -32,7 +33,7 @@ int main()
         ans += element(i,step, up);
     }
    printf("The answer is %f. \n", ans);
-   printf("n = %ld", n);
+   printf("n = %ld \n", n);
 
 
 
@@ -52,4 +53,4 @@ double element(long i, double step, double up)
 {
     return f(up - i * step) *step;
 }
-
+// LLY
