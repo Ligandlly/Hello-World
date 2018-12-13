@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-#define pi acos(-1)
-
 double element(long i, double step, double up);
 double f( double );
 
