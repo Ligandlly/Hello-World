@@ -11,7 +11,7 @@ int main()
 
     double up = acos(-1); // the upper limit
 
-    double low = 0; // the lower limit
+    double low = 1; // the lower limit
 
     if (up <= low)
     {
@@ -19,7 +19,7 @@ int main()
         return 0;
     }
 
-    long n = 10000;
+    long n = 10000000;
     double step = (up - low) / n;
 
     for (long i = 0; i < n; i++)
