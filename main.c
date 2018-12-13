@@ -30,7 +30,7 @@ int main()
     {
         ans += element(i,step, up);
     }
-   printf("The answer is %f. \n", ans);
+   printf("The answer is %.5f. \n", ans);
    printf("n = %ld \n", n);
 
 
