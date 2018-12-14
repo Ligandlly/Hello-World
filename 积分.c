@@ -9,8 +9,7 @@ int main()
     double ans = 0;
 
 
-    double up = acos(-1); // the upper limit
-
+    double up = acos(-1); // the upper limit = pi
     double low = 1; // the lower limit
 
     if (up <= low)
