@@ -11,7 +11,7 @@ def translate(en):
         'keyfrom': 'fanyi.web' , \
         'action': 'FY_BY_CLICKBUTTION', 'typoResult': 'false'}
 
-    response = requests.post("http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule", data = data)
-    return response.json()['translateResult'][0][0]['tgt']
+    cn = requests.post("http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule", data = data)
+    return cn.json()['translateResult'][0][0]['tgt']
 
 
